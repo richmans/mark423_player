@@ -14,8 +14,8 @@ puts "Writing jquery"
 write_file("lib/jquery-1.9.1.min.js", output_file)
 puts "Writing jplayer"
 write_file("lib/jquery.jplayer.min.js", output_file)
-puts "Writing playlist plugin"
-write_file("lib/jplayer.playlist.min.js", output_file)
+puts "Writing application js"
+write_file("lib/application.js", output_file)
 
 output_file.close
 puts "All done!"

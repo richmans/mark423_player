@@ -115,6 +115,7 @@ div#mark423-playlist a{
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -khtml-border-radius: 6px;
+  cursor:pointer;
 }
 div#mark423-playlist a:hover{
   color:#DD4B39;
