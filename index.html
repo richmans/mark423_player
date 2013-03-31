@@ -2,67 +2,12 @@
 <head><title>Mark423 Player test</title></head>
 <link rel="stylesheet" type="text/css" href="stylesheets/mark423-player.css">
 <body>
+  <script id='mark423-list-script' type='text/javascript' src='http://192.168.1.9:3000/podcasts/kvdnzaanstad.js'></script>
 
   <script src='build/mark423-player.js' type='text/javascript'></script>
   <script src='lib/application.js' type='text/javascript'></script>
 
-  <script type="text/javascript">
-   $(document).ready(function(){
-    $("#mark423-player-audio").jPlayer({
-     swfPath: 'flash',
-     solution: 'html, flash',
-     supplied: 'mp3',
-     preload: 'metadata',
-     volume: 0.8,
-     muted: false,
-     backgroundColor: '#000000',
-     cssSelectorAncestor: '#mark423-player',
-     cssSelector: {
-      play: '.jp-play',
-      pause: '.jp-pause',
-      seekBar: '.jp-seek-bar',
-      playBar: '.jp-play-bar',
-    //  mute: '.jp-mute',
-    //  unmute: '.jp-unmute',
-    //  volumeBar: '.jp-volume-bar',
-    //  volumeMax: '.jp-volume-max',
-      currentTime: '.jp-current-time',
-      noSolution: '.jp-no-solution',
-     
-     },
-     ready: function () {
-      $(this).jPlayer("setMedia", {
-        mp3: "http://localhost:3000/recordings/test/gibbehfsdfa-grapsdfsdf-20130325.mp3"
-      });
-     },
-     errorAlerts: false,
-     warningAlerts: false
-    });
-   });
-  </script>
 
-  <div id="mark423-player-audio">
-  </div>
-  <div id="mark423-player" style='width: 100%'>
-    <div class='jp-controls'>
-      <div class='jp-play-pause shadow'>
-        <a href="#" class="jp-play">p</a>
-        <a href="#" class="jp-pause" style='display:none'>r</a>
-      </div>
-      <div class='jp-display shadow'>
-        <div class='jp-current-time'></div>
-        <div class='jp-current-speaker'><span class='label'>Speaker: </span><span id='mark423-player-speaker'>Loading...</span></div>
-        <div class='jp-current-theme'><span class='label'>Theme: </span></span><span id='mark423-player-theme'>Loading...</span></div>
-      </div>
-    </div>
-    <div class='jp-progress shadow'>
-      <div class='jp-seek-bar'>
-        <div class='jp-play-bar' width:'0px'>&nbsp;</div>
-      </div>
-    </div>
 
-  </div>
-  <div id='mark423-playlist' class='shadow'>   
-  </div>
 </body>
 </html>
