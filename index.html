@@ -1,13 +1,12 @@
 <html>
 <head><title>Mark423 Player test</title></head>
-<link rel="stylesheet" type="text/css" href="stylesheets/mark423-player.css">
 <body>
-  <script id='mark423-list-script' type='text/javascript' src='http://192.168.1.9:3000/podcasts/kvdnzaanstad.js'></script>
-
-  <script src='build/mark423-player.js' type='text/javascript'></script>
-  <script src='lib/application.js' type='text/javascript'></script>
-
-
-
+<script id='mark423-list-script' type='text/javascript' src=''></script>
+<script src='build/mark423-player.js?dsf' type='text/javascript'></script>
+<script type='text/javascript'>
+  mark423({
+    url: 'http://localhost:3000/podcasts/kvdnzaanstad.js',
+  })
+</script>
 </body>
 </html>
