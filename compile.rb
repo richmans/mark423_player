@@ -1,7 +1,8 @@
 
-def write_file(filename, output)
+def write_file(filename, output, process=false)
   input = File.open(filename, 'r')
   while line = input.gets
+    line.gsub!("[root_url]", $root_url) if process
     output.puts line
   end
   input.close
@@ -62,12 +63,14 @@ def main(args)
   puts "Writing html"
   write_html_string("html/player.html", output_file)
   puts "Writing application js"
-  write_file("lib/application.js", output_file)
+  write_file("lib/application.js", output_file, true)
   puts "Writing tail"
   write_tail(output_file)
   output_file.close
   puts "Copying fonts"
   `cp -r fonts build`
+  puts "Copying flash"
+  `cp -r flash build`
   # how about some minimization here?
   puts "All done!"
 end
