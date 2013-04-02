@@ -54,6 +54,29 @@ div#mark423-player div.jp-play-pause a {
   font-size:45px;
 }
 
+div#mark423-player div.jp-eject {
+  float:right;
+  margin-top:43px;
+  text-align:center;
+  padding-top:13px;
+  width:50px;
+  height:37px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -khtml-border-radius: 25px;
+  border-radius: 25px;
+  font-family: 'mark423-player';
+  background-color:#f5f5f5;
+  font-size:21px;
+  cursor:pointer;
+}
+
+div#mark423-player div.jp-eject a{
+  text-decoration: none;
+   color:#DD4B39;
+ 
+}
+
 div#mark423-player div.jp-play-pause a.jp-play{ padding-left: 5px; }
 div#mark423-player div.jp-play-pause a.jp-pause{ padding-left: 2px; }
 div#mark423-player div.jp-display {
@@ -68,6 +91,7 @@ div#mark423-player div.jp-display {
   -webkit-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
+  margin-right: 65px;
 }
 
 div#mark423-player div.jp-display div.jp-current-time {
