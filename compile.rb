@@ -73,7 +73,7 @@ def main(args)
   `cp -r flash build`
   # how about some minimization here?
   puts "All done!"
-  # s3cmd put -r --acl-public --guess-mime-type * s3://mark423-player/
+  # s3cmd put -r --acl-public --guess-mime-type build/* s3://mark423-player/
 end
 
 main(ARGV)
