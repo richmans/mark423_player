@@ -154,3 +154,19 @@ div#mark423-playlist a.playing {
   -webkit-box-shadow: 2px 2px 3px #aaa;
   box-shadow:         2px 2px 3px #aaa;
 }
+
+div.jp-no-solution a{
+  color:#DD4B39;
+}
+
+div.jp-no-solution {
+  background-color:#e5e5e5;
+  color:#DD4B39;
+  position:absolute;
+  height:200px;
+  width:100%;
+  font-size:20px;
+  text-align:center;
+  padding-top:50px;
+  font-weight:900;
+}
