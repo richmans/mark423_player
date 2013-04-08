@@ -9,6 +9,9 @@
   font-style: normal;
 }
 
+div#mark423-playlist {
+  font: 14px arial;
+}
 div#mark423-player div.jp-progress{ 
   height:13px; 
   cursor:pointer; 

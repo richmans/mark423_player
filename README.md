@@ -11,6 +11,7 @@ Embedding the player works like this:
         highlight_color: 'red',      //optional, default: #DD4B39
         font_color: '#000000',       //optional, default: #333333
         background_color: 'white',   //optional, default: #f5f5f5
+        font: 'italic bold 20px Georgia', //optional, default: 12px Arial
         count: 10                    //amount of items shown, optional, default: 20
       })
     </script>
