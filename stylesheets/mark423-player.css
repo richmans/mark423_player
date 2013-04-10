@@ -91,6 +91,7 @@ div#mark423-player div.jp-mute, div#mark423-player div.jp-unmute {
   display:inline;
   margin-left:20px;
   margin-right:10px;
+  cursor:pointer;
 }
 
 
