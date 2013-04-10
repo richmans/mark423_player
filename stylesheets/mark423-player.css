@@ -9,6 +9,10 @@
   font-style: normal;
 }
 
+div#mark423-player { 
+  line-height: 1;
+}
+
 div#mark423-playlist {
   font: 14px arial;
 }
@@ -56,6 +60,39 @@ div#mark423-player div.jp-play-pause a {
   padding-top: 11px;
   font-size:45px;
 }
+
+div#mark423-player div.jp-volume-controls{
+  height:13px;
+  float:right;
+}
+
+div#mark423-player div.jp-volume-bar-value{
+  background-color:#DD4B39;
+}
+
+div#mark423-player div.jp-volume-bar{
+  display:inline-block;
+  width:100px;
+  height:13px; 
+  cursor:pointer; 
+  border:1px solid gray;
+  overflow:hidden;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  vertical-align:top;
+}
+
+div#mark423-player div.jp-mute, div#mark423-player div.jp-unmute {
+  font-family: 'mark423-player';
+  font-size:20px;
+  color:#DD4B39;
+  display:inline;
+  margin-left:20px;
+  margin-right:10px;
+}
+
 
 div#mark423-player div.jp-eject {
   float:right;
