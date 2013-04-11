@@ -27,6 +27,7 @@ div#mark423-player div.jp-progress{
   border-radius: 6px;
 }
 
+div#mark423-player div.jp-seek-bar{background-color:#CCCCCC;}
 div#mark423-player div.jp-play-bar{background-color:#DD4B39;}
 
 div#mark423-player div.jp-play-pause {
