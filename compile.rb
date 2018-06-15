@@ -53,11 +53,7 @@ end
 def main(args)
   prepare(args)
   puts "== Ready to build for #{$root_url} =="
-  output_file = File.open("build/mark423-player.js", 'w')
-  puts "Writing jquery"
-  write_file("lib/jquery-1.9.1.min.js", output_file)
-  puts "Writing jplayer"
-  write_file("lib/jquery.jplayer.min.js", output_file)
+  output_file = File.open("build/mark423-player.v2.js", 'w')
   puts "Writing css"
   write_css_string("stylesheets/mark423-player.css", output_file)
   puts "Writing html"
@@ -69,8 +65,6 @@ def main(args)
   output_file.close
   puts "Copying fonts"
   `cp -r fonts build`
-  puts "Copying flash"
-  `cp -r flash build`
   # how about some minimization here?
   puts "All done!"
   # s3cmd put -r --acl-public --guess-mime-type build/* s3://mark423-player/
