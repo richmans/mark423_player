@@ -1,5 +1,5 @@
 ## Mark423 player
-This is a javascript based player that reads podcasts and presents them as a list. It uses jPlayer to do the playout
+This is a javascript based player that reads podcasts and presents them as a list. 
 
 ## Embed
 Embedding the player works like this:
@@ -18,5 +18,3 @@ Embedding the player works like this:
 
 ## Thanks
 * [jQuery](jquery.com)
-* [jPlayer](jplayer.org)
-* Symbol fonts by [icomoon](icomoon.io)
