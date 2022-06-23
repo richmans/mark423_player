@@ -10,7 +10,11 @@ end
 
 def process_line(line)
   line.gsub!("[root_url]", $root_url)
+  ["download", 'play', 'unmute', 'pause', 'mute'].each do |f|
+    line.gsub! "{{img/#{f}.svg}}", File.open("img/#{f}.svg", 'r').read()
+  end
   line.gsub! '"', '\"'
+  
   line.strip
 end
 
@@ -63,9 +67,6 @@ def main(args)
   puts "Writing tail"
   write_tail(output_file)
   output_file.close
-  puts "Copying fonts"
-  `cp -r fonts build`
-  # how about some minimization here?
   puts "All done!"
   # s3cmd put -r --acl-public --guess-mime-type build/* s3://mark423-player/
 end
