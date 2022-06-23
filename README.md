@@ -16,5 +16,3 @@ Embedding the player works like this:
       })
     </script>
 
-## Thanks
-* [jQuery](jquery.com)
